@@ -13,12 +13,11 @@ function getPosts(){
     }, 1000);
 }
 
-getPosts();
-
-function createPosts(post){
+function createPosts(post, callback){
     setTimeout(() => {
        post.push(post); 
+       callback();
     }, 2000);
 }
 
-createPost({title: 'Post Three', body: 'This is post three'});
+createPost({title: 'Post Three', body: 'This is post three'}, getPosts);
