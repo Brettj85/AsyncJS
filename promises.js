@@ -29,7 +29,7 @@ function createPost(post) {
       }
     }, 2000);
 });}
-
+////origanal
 // createPost({ title: 'post three', body: 'this is post three' })
 //   .then(getPosts)
 //   .catch(err => console.log(err));
@@ -44,7 +44,7 @@ function createPost(post) {
 
 // init();
 
-//async await Fetch
+//Async / Await / Fetch
 async function fetchUsers(){
     const res = await fetch
     ('https://jsonplaceholder.typicode.com/users')
@@ -58,7 +58,7 @@ fetchUsers();
 
 
 
-//promise.all
+//promise.all////
 
 // const promise1 = Promise.resolve('Hello World');
 // const promise2 = 10;
